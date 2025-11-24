@@ -1,5 +1,0 @@
-/home/naman/ParaFetch/build/CMakeFiles/ParaFetch.dir
-/home/naman/ParaFetch/build/CMakeFiles/edit_cache.dir
-/home/naman/ParaFetch/build/CMakeFiles/rebuild_cache.dir
-/home/naman/ParaFetch/build/CMakeFiles/ParaFetch_autogen_timestamp_deps.dir
-/home/naman/ParaFetch/build/CMakeFiles/ParaFetch_autogen.dir
