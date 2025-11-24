@@ -26,7 +26,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_DownloadWorker_t {
-    uint offsetsAndSizes[58];
+    uint offsetsAndSizes[62];
     char stringdata0[15];
     char stringdata1[20];
     char stringdata2[1];
@@ -53,9 +53,11 @@ struct qt_meta_stringdata_DownloadWorker_t {
     char stringdata23[14];
     char stringdata24[15];
     char stringdata25[15];
-    char stringdata26[12];
-    char stringdata27[15];
-    char stringdata28[23];
+    char stringdata26[14];
+    char stringdata27[6];
+    char stringdata28[12];
+    char stringdata29[15];
+    char stringdata30[23];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_DownloadWorker_t::offsetsAndSizes) + ofs), len 
@@ -87,9 +89,11 @@ Q_CONSTINIT static const qt_meta_stringdata_DownloadWorker_t qt_meta_stringdata_
         QT_MOC_LITERAL(269, 13),  // "pauseDownload"
         QT_MOC_LITERAL(283, 14),  // "resumeDownload"
         QT_MOC_LITERAL(298, 14),  // "cancelDownload"
-        QT_MOC_LITERAL(313, 11),  // "performWork"
-        QT_MOC_LITERAL(325, 14),  // "updateProgress"
-        QT_MOC_LITERAL(340, 22)   // "attemptNetworkRecovery"
+        QT_MOC_LITERAL(313, 13),  // "setSpeedLimit"
+        QT_MOC_LITERAL(327, 5),  // "limit"
+        QT_MOC_LITERAL(333, 11),  // "performWork"
+        QT_MOC_LITERAL(345, 14),  // "updateProgress"
+        QT_MOC_LITERAL(360, 22)   // "attemptNetworkRecovery"
     },
     "DownloadWorker",
     "downloadIDGenerated",
@@ -117,6 +121,8 @@ Q_CONSTINIT static const qt_meta_stringdata_DownloadWorker_t qt_meta_stringdata_
     "pauseDownload",
     "resumeDownload",
     "cancelDownload",
+    "setSpeedLimit",
+    "limit",
     "performWork",
     "updateProgress",
     "attemptNetworkRecovery"
@@ -130,7 +136,7 @@ Q_CONSTINIT static const uint qt_meta_data_DownloadWorker[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-      13,   14, // methods
+      14,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -138,21 +144,22 @@ Q_CONSTINIT static const uint qt_meta_data_DownloadWorker[] = {
        6,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   92,    2, 0x06,    1 /* Public */,
-       4,    5,   95,    2, 0x06,    3 /* Public */,
-      10,    1,  106,    2, 0x06,    9 /* Public */,
-      13,    2,  109,    2, 0x06,   11 /* Public */,
-      16,    1,  114,    2, 0x06,   14 /* Public */,
-      18,    1,  117,    2, 0x06,   16 /* Public */,
+       1,    1,   98,    2, 0x06,    1 /* Public */,
+       4,    5,  101,    2, 0x06,    3 /* Public */,
+      10,    1,  112,    2, 0x06,    9 /* Public */,
+      13,    2,  115,    2, 0x06,   11 /* Public */,
+      16,    1,  120,    2, 0x06,   14 /* Public */,
+      18,    1,  123,    2, 0x06,   16 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-      20,    2,  120,    2, 0x0a,   18 /* Public */,
-      23,    0,  125,    2, 0x0a,   21 /* Public */,
-      24,    1,  126,    2, 0x0a,   22 /* Public */,
-      25,    0,  129,    2, 0x0a,   24 /* Public */,
-      26,    0,  130,    2, 0x08,   25 /* Private */,
-      27,    0,  131,    2, 0x08,   26 /* Private */,
-      28,    0,  132,    2, 0x08,   27 /* Private */,
+      20,    2,  126,    2, 0x0a,   18 /* Public */,
+      23,    0,  131,    2, 0x0a,   21 /* Public */,
+      24,    1,  132,    2, 0x0a,   22 /* Public */,
+      25,    0,  135,    2, 0x0a,   24 /* Public */,
+      26,    1,  136,    2, 0x0a,   25 /* Public */,
+      28,    0,  139,    2, 0x08,   27 /* Private */,
+      29,    0,  140,    2, 0x08,   28 /* Private */,
+      30,    0,  141,    2, 0x08,   29 /* Private */,
 
  // signals: parameters
     QMetaType::Void, QMetaType::QString,    3,
@@ -167,6 +174,7 @@ Q_CONSTINIT static const uint qt_meta_data_DownloadWorker[] = {
     QMetaType::Void,
     QMetaType::Void, QMetaType::QString,   17,
     QMetaType::Void,
+    QMetaType::Void, QMetaType::Double,   27,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -217,6 +225,9 @@ Q_CONSTINIT const QMetaObject DownloadWorker::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
         // method 'cancelDownload'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'setSpeedLimit'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<double, std::false_type>,
         // method 'performWork'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'updateProgress'
@@ -243,9 +254,10 @@ void DownloadWorker::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         case 7: _t->pauseDownload(); break;
         case 8: _t->resumeDownload((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 9: _t->cancelDownload(); break;
-        case 10: _t->performWork(); break;
-        case 11: _t->updateProgress(); break;
-        case 12: _t->attemptNetworkRecovery(); break;
+        case 10: _t->setSpeedLimit((*reinterpret_cast< std::add_pointer_t<double>>(_a[1]))); break;
+        case 11: _t->performWork(); break;
+        case 12: _t->updateProgress(); break;
+        case 13: _t->attemptNetworkRecovery(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -314,13 +326,13 @@ int DownloadWorker::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 13)
+        if (_id < 14)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 13;
+        _id -= 14;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 13)
+        if (_id < 14)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 13;
+        _id -= 14;
     }
     return _id;
 }

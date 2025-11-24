@@ -186,6 +186,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/naman/ParaFetch/batchdownloaddialog.h",
+			"Mu",
+			"EWIEGA46WW/moc_batchdownloaddialog.cpp",
+			null
+		],
+		[
 			"/home/naman/ParaFetch/chunkprogress.h",
 			"Mu",
 			"EWIEGA46WW/moc_chunkprogress.cpp",
@@ -213,6 +219,18 @@
 			"/home/naman/ParaFetch/myform.h",
 			"Mu",
 			"EWIEGA46WW/moc_myform.cpp",
+			null
+		],
+		[
+			"/home/naman/ParaFetch/notificationmanager.h",
+			"Mu",
+			"EWIEGA46WW/moc_notificationmanager.cpp",
+			null
+		],
+		[
+			"/home/naman/ParaFetch/settingsdialog.h",
+			"Mu",
+			"EWIEGA46WW/moc_settingsdialog.cpp",
 			null
 		]
 	],
@@ -274,11 +292,14 @@
 	"SETTINGS_FILE" : "/home/naman/ParaFetch/build/CMakeFiles/ParaFetch_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/home/naman/ParaFetch/batchdownloaddialog.cpp", "Mu", null ],
 		[ "/home/naman/ParaFetch/downloadmanager.cpp", "Mu", null ],
 		[ "/home/naman/ParaFetch/downloadworker.cpp", "Mu", null ],
 		[ "/home/naman/ParaFetch/httphelper.cpp", "Mu", null ],
 		[ "/home/naman/ParaFetch/main.cpp", "Mu", null ],
-		[ "/home/naman/ParaFetch/myform.cpp", "Mu", null ]
+		[ "/home/naman/ParaFetch/myform.cpp", "Mu", null ],
+		[ "/home/naman/ParaFetch/notificationmanager.cpp", "Mu", null ],
+		[ "/home/naman/ParaFetch/settingsdialog.cpp", "Mu", null ]
 	],
 	"VERBOSITY" : 0
 }

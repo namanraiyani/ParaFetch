@@ -8,7 +8,7 @@
 
 DownloadWorker::DownloadWorker(QObject *parent)
     : QObject(parent), m_multiHandle(nullptr), m_fileSize(-1), 
-      m_numChunks(0), m_supportsRanges(false), m_bytesAtStart(0), // Init
+      m_numChunks(0), m_supportsRanges(false), m_speedLimit(0), m_bytesAtStart(0), // Init
       m_userPaused(false), m_cancelled(false), m_isNetworkError(false)
 {
     curl_global_init(CURL_GLOBAL_ALL);
@@ -125,6 +125,13 @@ bool DownloadWorker::initializeDownload(const QString& url, int numChunks) {
         curl_easy_setopt(eh, CURLOPT_FOLLOWLOCATION, 1L);
         curl_easy_setopt(eh, CURLOPT_SSL_VERIFYPEER, 0L);
         curl_easy_setopt(eh, CURLOPT_CONNECTTIMEOUT, 10L);
+        
+        // Apply speed limit if set
+        if (m_speedLimit > 0) {
+            curl_off_t limitPerHandle = (curl_off_t)(m_speedLimit / numChunks);
+            curl_easy_setopt(eh, CURLOPT_MAX_RECV_SPEED_LARGE, limitPerHandle);
+        }
+        
         curl_multi_add_handle(m_multiHandle, eh);
     }
     return true;
@@ -265,6 +272,13 @@ void DownloadWorker::resumeDownload(const QString& downloadId) {
         curl_easy_setopt(eh, CURLOPT_WRITEDATA, &m_chunks[i]);
         curl_easy_setopt(eh, CURLOPT_FOLLOWLOCATION, 1L);
         curl_easy_setopt(eh, CURLOPT_SSL_VERIFYPEER, 0L);
+        
+        // Apply speed limit if set
+        if (m_speedLimit > 0) {
+            curl_off_t limitPerHandle = (curl_off_t)(m_speedLimit / chunks);
+            curl_easy_setopt(eh, CURLOPT_MAX_RECV_SPEED_LARGE, limitPerHandle);
+        }
+        
         curl_multi_add_handle(m_multiHandle, eh);
     }
 
@@ -352,4 +366,14 @@ void DownloadWorker::cancelDownload() {
     cleanup();
     DownloadManager::cleanupChunks(m_downloadId, m_numChunks);
     emit downloadFinished(false, "Cancelled");
+}
+
+void DownloadWorker::setSpeedLimit(double limit) {
+    m_speedLimit = limit;
+    if (m_multiHandle && !m_easyHandles.empty()) {
+        curl_off_t limitPerHandle = (limit > 0 && m_numChunks > 0) ? (curl_off_t)(limit / m_numChunks) : 0;
+        for (auto eh : m_easyHandles) {
+            curl_easy_setopt(eh, CURLOPT_MAX_RECV_SPEED_LARGE, limitPerHandle);
+        }
+    }
 }

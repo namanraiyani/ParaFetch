@@ -34,6 +34,7 @@ public slots:
     void pauseDownload();
     void resumeDownload(const QString& downloadId);
     void cancelDownload();
+    void setSpeedLimit(double limit); // limit in bytes/sec, 0 = unlimited
 
 private slots:
     void performWork();
@@ -67,6 +68,7 @@ private:
     curl_off_t m_fileSize;
     int m_numChunks;
     bool m_supportsRanges;
+    double m_speedLimit; // Bytes per second
     
     // --- NEW: Track bytes present when session started ---
     curl_off_t m_bytesAtStart; 

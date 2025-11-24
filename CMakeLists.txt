@@ -20,6 +20,12 @@ add_executable(ParaFetch
     httphelper.cpp
     httphelper.h
     chunkprogress.h
+    settingsdialog.cpp
+    settingsdialog.h
+    batchdownloaddialog.cpp
+    batchdownloaddialog.h
+    notificationmanager.cpp
+    notificationmanager.h
 )
 
 target_link_libraries(ParaFetch PRIVATE Qt6::Core Qt6::Widgets ${CURL_LIBRARIES})

@@ -159,6 +159,48 @@ CMakeFiles/ParaFetch.dir/httphelper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ParaFetch.dir/httphelper.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/naman/ParaFetch/httphelper.cpp -o CMakeFiles/ParaFetch.dir/httphelper.cpp.s
 
+CMakeFiles/ParaFetch.dir/settingsdialog.cpp.o: CMakeFiles/ParaFetch.dir/flags.make
+CMakeFiles/ParaFetch.dir/settingsdialog.cpp.o: /home/naman/ParaFetch/settingsdialog.cpp
+CMakeFiles/ParaFetch.dir/settingsdialog.cpp.o: CMakeFiles/ParaFetch.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/naman/ParaFetch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ParaFetch.dir/settingsdialog.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ParaFetch.dir/settingsdialog.cpp.o -MF CMakeFiles/ParaFetch.dir/settingsdialog.cpp.o.d -o CMakeFiles/ParaFetch.dir/settingsdialog.cpp.o -c /home/naman/ParaFetch/settingsdialog.cpp
+
+CMakeFiles/ParaFetch.dir/settingsdialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ParaFetch.dir/settingsdialog.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/naman/ParaFetch/settingsdialog.cpp > CMakeFiles/ParaFetch.dir/settingsdialog.cpp.i
+
+CMakeFiles/ParaFetch.dir/settingsdialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ParaFetch.dir/settingsdialog.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/naman/ParaFetch/settingsdialog.cpp -o CMakeFiles/ParaFetch.dir/settingsdialog.cpp.s
+
+CMakeFiles/ParaFetch.dir/batchdownloaddialog.cpp.o: CMakeFiles/ParaFetch.dir/flags.make
+CMakeFiles/ParaFetch.dir/batchdownloaddialog.cpp.o: /home/naman/ParaFetch/batchdownloaddialog.cpp
+CMakeFiles/ParaFetch.dir/batchdownloaddialog.cpp.o: CMakeFiles/ParaFetch.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/naman/ParaFetch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ParaFetch.dir/batchdownloaddialog.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ParaFetch.dir/batchdownloaddialog.cpp.o -MF CMakeFiles/ParaFetch.dir/batchdownloaddialog.cpp.o.d -o CMakeFiles/ParaFetch.dir/batchdownloaddialog.cpp.o -c /home/naman/ParaFetch/batchdownloaddialog.cpp
+
+CMakeFiles/ParaFetch.dir/batchdownloaddialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ParaFetch.dir/batchdownloaddialog.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/naman/ParaFetch/batchdownloaddialog.cpp > CMakeFiles/ParaFetch.dir/batchdownloaddialog.cpp.i
+
+CMakeFiles/ParaFetch.dir/batchdownloaddialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ParaFetch.dir/batchdownloaddialog.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/naman/ParaFetch/batchdownloaddialog.cpp -o CMakeFiles/ParaFetch.dir/batchdownloaddialog.cpp.s
+
+CMakeFiles/ParaFetch.dir/notificationmanager.cpp.o: CMakeFiles/ParaFetch.dir/flags.make
+CMakeFiles/ParaFetch.dir/notificationmanager.cpp.o: /home/naman/ParaFetch/notificationmanager.cpp
+CMakeFiles/ParaFetch.dir/notificationmanager.cpp.o: CMakeFiles/ParaFetch.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/naman/ParaFetch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ParaFetch.dir/notificationmanager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ParaFetch.dir/notificationmanager.cpp.o -MF CMakeFiles/ParaFetch.dir/notificationmanager.cpp.o.d -o CMakeFiles/ParaFetch.dir/notificationmanager.cpp.o -c /home/naman/ParaFetch/notificationmanager.cpp
+
+CMakeFiles/ParaFetch.dir/notificationmanager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ParaFetch.dir/notificationmanager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/naman/ParaFetch/notificationmanager.cpp > CMakeFiles/ParaFetch.dir/notificationmanager.cpp.i
+
+CMakeFiles/ParaFetch.dir/notificationmanager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ParaFetch.dir/notificationmanager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/naman/ParaFetch/notificationmanager.cpp -o CMakeFiles/ParaFetch.dir/notificationmanager.cpp.s
+
 # Object files for target ParaFetch
 ParaFetch_OBJECTS = \
 "CMakeFiles/ParaFetch.dir/ParaFetch_autogen/mocs_compilation.cpp.o" \
@@ -166,7 +208,10 @@ ParaFetch_OBJECTS = \
 "CMakeFiles/ParaFetch.dir/myform.cpp.o" \
 "CMakeFiles/ParaFetch.dir/downloadworker.cpp.o" \
 "CMakeFiles/ParaFetch.dir/downloadmanager.cpp.o" \
-"CMakeFiles/ParaFetch.dir/httphelper.cpp.o"
+"CMakeFiles/ParaFetch.dir/httphelper.cpp.o" \
+"CMakeFiles/ParaFetch.dir/settingsdialog.cpp.o" \
+"CMakeFiles/ParaFetch.dir/batchdownloaddialog.cpp.o" \
+"CMakeFiles/ParaFetch.dir/notificationmanager.cpp.o"
 
 # External object files for target ParaFetch
 ParaFetch_EXTERNAL_OBJECTS =
@@ -177,6 +222,9 @@ ParaFetch: CMakeFiles/ParaFetch.dir/myform.cpp.o
 ParaFetch: CMakeFiles/ParaFetch.dir/downloadworker.cpp.o
 ParaFetch: CMakeFiles/ParaFetch.dir/downloadmanager.cpp.o
 ParaFetch: CMakeFiles/ParaFetch.dir/httphelper.cpp.o
+ParaFetch: CMakeFiles/ParaFetch.dir/settingsdialog.cpp.o
+ParaFetch: CMakeFiles/ParaFetch.dir/batchdownloaddialog.cpp.o
+ParaFetch: CMakeFiles/ParaFetch.dir/notificationmanager.cpp.o
 ParaFetch: CMakeFiles/ParaFetch.dir/build.make
 ParaFetch: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 ParaFetch: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
@@ -184,7 +232,7 @@ ParaFetch: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 ParaFetch: /usr/lib/x86_64-linux-gnu/libGLX.so
 ParaFetch: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 ParaFetch: CMakeFiles/ParaFetch.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/naman/ParaFetch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ParaFetch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/naman/ParaFetch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable ParaFetch"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ParaFetch.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

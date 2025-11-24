@@ -179,6 +179,30 @@ ParaFetch_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ParaFetch.dir/build.make CMakeFiles/ParaFetch.dir/ParaFetch_autogen/mocs_compilation.cpp.s
 .PHONY : ParaFetch_autogen/mocs_compilation.cpp.s
 
+batchdownloaddialog.o: batchdownloaddialog.cpp.o
+.PHONY : batchdownloaddialog.o
+
+# target to build an object file
+batchdownloaddialog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ParaFetch.dir/build.make CMakeFiles/ParaFetch.dir/batchdownloaddialog.cpp.o
+.PHONY : batchdownloaddialog.cpp.o
+
+batchdownloaddialog.i: batchdownloaddialog.cpp.i
+.PHONY : batchdownloaddialog.i
+
+# target to preprocess a source file
+batchdownloaddialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ParaFetch.dir/build.make CMakeFiles/ParaFetch.dir/batchdownloaddialog.cpp.i
+.PHONY : batchdownloaddialog.cpp.i
+
+batchdownloaddialog.s: batchdownloaddialog.cpp.s
+.PHONY : batchdownloaddialog.s
+
+# target to generate assembly for a file
+batchdownloaddialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ParaFetch.dir/build.make CMakeFiles/ParaFetch.dir/batchdownloaddialog.cpp.s
+.PHONY : batchdownloaddialog.cpp.s
+
 downloadmanager.o: downloadmanager.cpp.o
 .PHONY : downloadmanager.o
 
@@ -299,6 +323,54 @@ myform.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ParaFetch.dir/build.make CMakeFiles/ParaFetch.dir/myform.cpp.s
 .PHONY : myform.cpp.s
 
+notificationmanager.o: notificationmanager.cpp.o
+.PHONY : notificationmanager.o
+
+# target to build an object file
+notificationmanager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ParaFetch.dir/build.make CMakeFiles/ParaFetch.dir/notificationmanager.cpp.o
+.PHONY : notificationmanager.cpp.o
+
+notificationmanager.i: notificationmanager.cpp.i
+.PHONY : notificationmanager.i
+
+# target to preprocess a source file
+notificationmanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ParaFetch.dir/build.make CMakeFiles/ParaFetch.dir/notificationmanager.cpp.i
+.PHONY : notificationmanager.cpp.i
+
+notificationmanager.s: notificationmanager.cpp.s
+.PHONY : notificationmanager.s
+
+# target to generate assembly for a file
+notificationmanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ParaFetch.dir/build.make CMakeFiles/ParaFetch.dir/notificationmanager.cpp.s
+.PHONY : notificationmanager.cpp.s
+
+settingsdialog.o: settingsdialog.cpp.o
+.PHONY : settingsdialog.o
+
+# target to build an object file
+settingsdialog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ParaFetch.dir/build.make CMakeFiles/ParaFetch.dir/settingsdialog.cpp.o
+.PHONY : settingsdialog.cpp.o
+
+settingsdialog.i: settingsdialog.cpp.i
+.PHONY : settingsdialog.i
+
+# target to preprocess a source file
+settingsdialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ParaFetch.dir/build.make CMakeFiles/ParaFetch.dir/settingsdialog.cpp.i
+.PHONY : settingsdialog.cpp.i
+
+settingsdialog.s: settingsdialog.cpp.s
+.PHONY : settingsdialog.s
+
+# target to generate assembly for a file
+settingsdialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ParaFetch.dir/build.make CMakeFiles/ParaFetch.dir/settingsdialog.cpp.s
+.PHONY : settingsdialog.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -313,6 +385,9 @@ help:
 	@echo "... ParaFetch_autogen/mocs_compilation.o"
 	@echo "... ParaFetch_autogen/mocs_compilation.i"
 	@echo "... ParaFetch_autogen/mocs_compilation.s"
+	@echo "... batchdownloaddialog.o"
+	@echo "... batchdownloaddialog.i"
+	@echo "... batchdownloaddialog.s"
 	@echo "... downloadmanager.o"
 	@echo "... downloadmanager.i"
 	@echo "... downloadmanager.s"
@@ -328,6 +403,12 @@ help:
 	@echo "... myform.o"
 	@echo "... myform.i"
 	@echo "... myform.s"
+	@echo "... notificationmanager.o"
+	@echo "... notificationmanager.i"
+	@echo "... notificationmanager.s"
+	@echo "... settingsdialog.o"
+	@echo "... settingsdialog.i"
+	@echo "... settingsdialog.s"
 .PHONY : help
 
 

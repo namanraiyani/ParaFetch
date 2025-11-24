@@ -10,11 +10,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "ParaFetch_autogen/timestamp" "custom" "ParaFetch_autogen/deps"
   "/home/naman/ParaFetch/build/ParaFetch_autogen/mocs_compilation.cpp" "CMakeFiles/ParaFetch.dir/ParaFetch_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/ParaFetch.dir/ParaFetch_autogen/mocs_compilation.cpp.o.d"
+  "/home/naman/ParaFetch/batchdownloaddialog.cpp" "CMakeFiles/ParaFetch.dir/batchdownloaddialog.cpp.o" "gcc" "CMakeFiles/ParaFetch.dir/batchdownloaddialog.cpp.o.d"
   "/home/naman/ParaFetch/downloadmanager.cpp" "CMakeFiles/ParaFetch.dir/downloadmanager.cpp.o" "gcc" "CMakeFiles/ParaFetch.dir/downloadmanager.cpp.o.d"
   "/home/naman/ParaFetch/downloadworker.cpp" "CMakeFiles/ParaFetch.dir/downloadworker.cpp.o" "gcc" "CMakeFiles/ParaFetch.dir/downloadworker.cpp.o.d"
   "/home/naman/ParaFetch/httphelper.cpp" "CMakeFiles/ParaFetch.dir/httphelper.cpp.o" "gcc" "CMakeFiles/ParaFetch.dir/httphelper.cpp.o.d"
   "/home/naman/ParaFetch/main.cpp" "CMakeFiles/ParaFetch.dir/main.cpp.o" "gcc" "CMakeFiles/ParaFetch.dir/main.cpp.o.d"
   "/home/naman/ParaFetch/myform.cpp" "CMakeFiles/ParaFetch.dir/myform.cpp.o" "gcc" "CMakeFiles/ParaFetch.dir/myform.cpp.o.d"
+  "/home/naman/ParaFetch/notificationmanager.cpp" "CMakeFiles/ParaFetch.dir/notificationmanager.cpp.o" "gcc" "CMakeFiles/ParaFetch.dir/notificationmanager.cpp.o.d"
+  "/home/naman/ParaFetch/settingsdialog.cpp" "CMakeFiles/ParaFetch.dir/settingsdialog.cpp.o" "gcc" "CMakeFiles/ParaFetch.dir/settingsdialog.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
